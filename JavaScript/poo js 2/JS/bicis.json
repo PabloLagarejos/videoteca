@@ -1,0 +1,6 @@
+{
+    "listaBicis":[
+        {"bastidor":1342,"color":"azul","marca":"Orbea","imagen":"https://patinbici.com/imagenes/las-7-mejores-bicicletas-orbea.jpg"},
+        {"bastidor":146,"color":"verde","marca":"BH","imagen":" https://bhbikes-vsf.netdna-ssl.com/cache/bicis/a093b3/ld652_bsb_n1.jpg"}
+        ]
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+
+		<meta name="description" content="Image gallery with description in 4 lines of jQuery code" />
+		<meta name="keywords" content="jquery tutorial,image gallery, jquery delegate" />
+		<script src="js/galeria.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/galeria.css" type="text/css" />
+
+		<title>Galeria de Imágenes</title>
+
+	</head>
+	<body> 
+		<div id="page">
+			<h1>Galería de Imágenes</h1>
+
+			<div id="gallery">
+				<div id="panel">
+					<img id="largeImage" src="media/img/imagen1.jpg"/>
+					<div id="description">
+						<h3>Imágenes de Japón</h3>
+					</div>
+				</div>
+
+				<div id="thumbs">
+					<img src="media/img/imagen1.jpg" alt="1ª Imagen de Japón" title="1ª Imagen de Japón"/>
+					<img src="media/img/imagen2.jpg" alt="2ª Imagen de Japón" title="2ª Imagen de Japón"/>
+					<img src="media/img/imagen3.jpg" alt="3ª Imagen de Japón" title="3ª Imagen de Japón"/>
+					<img src="media/img/imagen4.jpg" alt="4ª Imagen de Japón" title="4ª Imagen de Japón"/>
+					<img src="media/img/imagen5.jpg" alt="5ª Imagen de Japón" title="5ª Imagen de Japón"/>
+					<img src="media/img/imagen6.jpg" alt="6ª Imagen de Japón" title="6ª Imagen de Japón"/>
+					<img src="media/img/imagen7.jpg" alt="7ª Imagen de Japón" title="7ª Imagen de Japón"/>
+					<img src="media/img/imagen8.jpg" alt="8ª Imagen de Japón" title="8ª Imagen de Japón"/>
+					<img src="media/img/imagen9.jpg" alt="9ª Imagen de Japón" title="9ª Imagen de Japón"/>
+					<img src="media/img/imagen10.jpg" alt="10ª Imagen de Japón" title="10ª Imagen de Japón"/>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$('#thumbs').delegate('img','click', function(){
+				$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+				$('#description').html($(this).attr('alt'));
+			});
+		</script>
+	</body>
+</html>

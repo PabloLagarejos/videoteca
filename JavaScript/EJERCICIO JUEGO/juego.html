@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Posicionamiento</title>
+	<link rel="stylesheet" type="text/css" href="CSS/juego.css">
+	<script type="text/javascript" src="JS/juego.js"></script>
+</head>
+<body>
+	<div id="contenedor">
+		<header>
+			<div id="cabecera">
+				<div id="logo">
+					<img src="img/logo.jpg" />
+				</div>
+			</div>
+		</header>
+		<div id="dado">
+			<img src="img/cuadrosImpares.jpg" id="imagenDado"><br><br>
+			<input type="submit" name="tirarDado" id="tirarDado" value="Tirar dado" onClick="tirarDado()">
+		</div>
+		<div id="tabla">
+			<table id="tablaJuego">
+				<tr>
+					<th>Usuario</th>
+					<th>Puntuacion</th>
+				</tr>
+				<tr>
+					<th id=nombreUsuario></th>
+					<th id=puntuacionUsuario></th>
+				</tr>
+				
+			</table>
+		</div>	   
+		<div id="principal">
+			<label for=casillas><b>Numero de casillas</b></label> 
+			<input type="number" name="casillas" id="casillas" value=""><br><br>
+			<input type="submit" name="hacerCasillas" id="hacerCasillas" value="Hacer camino "onClick="crearCamino()"><br><br>
+			<br><br>
+			<div id="tablero"></div>
+		</div>
+
+					
+		<footer>
+			
+		</footer>
+		
+		
+	</div>
+</body>
+</html>

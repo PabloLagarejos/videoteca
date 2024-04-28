@@ -1,0 +1,27 @@
+package ejercicio1;
+
+public class Planta {
+	String nombreComun;
+	String nombreCientifico;
+	int anio;
+	
+	Planta(String nombreCo,String nombreSfi,int anioIn){
+		
+		 this.nombreComun=nombreCo;
+		 this.nombreCientifico=nombreSfi;
+		 this.anio=anioIn;
+	}
+	Planta(){
+		this.nombreComun="" ;
+		 this.nombreCientifico="" ;
+		 this.anio=0 ;
+	}
+	
+	public String toString() {
+		String cadena="-------------Planta----------------\n";
+		caden=cadena+"Nombre común:"+nombreComun+"\m";
+		return cadena;
+		
+	}
+
+}

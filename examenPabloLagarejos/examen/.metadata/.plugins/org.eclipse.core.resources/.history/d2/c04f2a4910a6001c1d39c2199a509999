@@ -1,0 +1,12 @@
+package ejercicio1;
+
+import java.util.Scanner
+
+public class Gestor_plantas {
+	
+	static Scanner Teclado;
+	public static void main(String[]Args) {
+		
+		Teclado=new Scanner(System.in);
+	}
+}

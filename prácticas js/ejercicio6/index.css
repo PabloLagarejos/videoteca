@@ -1,0 +1,12 @@
+#contar{
+    border: 1px solid black;
+    background: green;
+    width:400px;
+    height: 200px;
+}
+#nocontar{
+    border: 1px solid black;
+    background: orange;
+    width:400px;
+    height: 200px;
+}

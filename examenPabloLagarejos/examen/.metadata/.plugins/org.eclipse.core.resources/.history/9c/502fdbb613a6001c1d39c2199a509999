@@ -1,0 +1,97 @@
+package ejercicio1;
+
+import java.util.Scanner;
+
+public class Gestor_plantas {
+	private static Planta[]ListaPlantas;
+	static Scanner Teclado;
+	public static void main(String[]Args) {
+		ListaPlantas=new Planta[3];
+		Teclado=new Scanner(System.in);
+		int opcionUsuario=0;
+		while(opcionUsuario!=6) {
+		System.out.println("Elija una opcion:\n"
+				+ "1.Insertar Planta con get/set"
+				+ "2.insertar Planta constructor normal"
+				+ "3.insertar Planta constructor copia"
+				+ "4.comprobar dos objetos iguales"
+				+ "5.Mostrar info objeto"
+				+ "6.Salir");
+		opcionUsuario=Teclado.nextInt();
+		
+			switch(opcionUsuario) {
+			case 1:
+				insertar1();
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				break;
+				default:
+			}
+		}
+		
+	}
+	public boolean insertar1() {
+		Planta plantaIn=null;
+		boolean insertar=false;
+		int contador=0;
+		String nombreComunUsu;
+		String nombreSfiUsu;
+		int anioUsu;
+		
+		System.out.println("Diga el nombre comun");
+		nombreComunUsu=Teclado.next();
+		plantaIn.setNombreComun(nombreComunUsu);
+		System.out.println("Diga el nombre comun");
+		nombreSfiUsu=Teclado.next();
+		plantaIn.setNombreCientifico(nombreSfiUsu);
+		System.out.println("Diga el nombre comun");
+		anioUsu=Teclado.nextInt();
+		plantaIn.setAnio(anioUsu);
+		
+		 while((!insertar)&(contador<ListaPlantas.length)) {
+			 if(ListaPlantas[contador]==null) {
+				 ListaPlantas[contador]=plantaIn;
+				 insertar=true;
+			 }
+			 
+		 }
+		 return insertar;
+		 
+	}
+	public boolean insertar2() {
+		 
+		boolean insertar=false;
+		int contador=0;
+		String nombreComunUsu;
+		String nombreSfiUsu;
+		int anioUsu;
+		
+		System.out.println("Diga el nombre comun");
+		nombreComunUsu=Teclado.next();
+		 
+		System.out.println("Diga el nombre comun");
+		nombreSfiUsu=Teclado.next();
+		 
+		System.out.println("Diga el nombre comun");
+		anioUsu=Teclado.nextInt();
+		 
+		Planta plantaIn=new Planta(nombreComunUsu,nombreSfiUsu,anioUsu);
+		
+		while((!insertar)&(contador<ListaPlantas.length)) {
+			 if(ListaPlantas[contador]==null) {
+				 ListaPlantas[contador]=plantaIn;
+				 insertar=true;
+			 }
+			 
+		 }
+		 return insertar;
+	}
+}

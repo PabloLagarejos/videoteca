@@ -1,0 +1,53 @@
+ 
+ 
+ div, aside, header, footer, cabecera, nav{
+	margin:1px;
+	float: left;	
+}
+
+
+
+#contenedorCentral{
+	background-color:silver;
+}
+
+#principal{
+	margin-left: 8px;
+	width: 78%;
+	background-color: cyan;
+	float: right;
+}
+#central{
+	width: 77%;
+	background-color: orange;
+	margin-left: 8px;
+	float: left;
+}
+
+#lateralDerecho{
+	float: left;
+	width: 22%;
+}
+
+
+.img_drag{
+	height: 100%;
+	width: 100%;
+}
+
+
+.div_drop{
+	width: 33%;
+	height: 200px;
+	background-color: red;
+	float: left;
+}
+
+#contadorLateral{
+	margin: 100px;
+	font-size: 80px;
+}
+
+#textoJuegoLateral{
+	margin: 25px;
+}

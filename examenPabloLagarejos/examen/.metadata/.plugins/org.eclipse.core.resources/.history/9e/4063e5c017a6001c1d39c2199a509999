@@ -1,0 +1,19 @@
+package ejercicio3;
+
+public class Deporte_online {
+	String idEvento;
+	String nombreEvento;
+	int duracionEvento;
+	
+	Deporte_online(String idEventoIn,String nombreEventoIn,int duracionEventoIn){
+		this.idEvento=idEventoIn;
+		this.nombreEvento=nombreEventoIn;
+		this.duracionEvento=duracionEventoIn;
+	}
+	Deporte_online(){
+		this.idEvento="";
+		this.nombreEvento="";
+		this.duracionEvento=0;
+	}
+	
+}

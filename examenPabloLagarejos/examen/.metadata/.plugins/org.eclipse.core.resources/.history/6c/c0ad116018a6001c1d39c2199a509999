@@ -1,0 +1,27 @@
+package ejercicio3;
+
+public class Dron extends Deporte_online {
+	
+	  int numeroPartic;
+	
+	
+
+	Dron(String idEventoIn,String nombreEventoIn,int duracionEventoIn,int numeroParticIn){
+		
+		super(idEventoIn,nombreEventoIn,duracionEventoIn);
+		this.numeroPartic=numeroParticIn;
+		
+	}
+	Dron(){
+		
+	}
+	public int getNumeroPartic() {
+		return numeroPartic;
+	}
+
+	public void setNumeroPartic(int numeroPartic) {
+		this.numeroPartic = numeroPartic;
+	}
+	
+	
+}

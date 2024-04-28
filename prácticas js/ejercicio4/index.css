@@ -1,0 +1,10 @@
+#ejercicio{
+    border: 1px solid black;
+    background: green;
+    font-size: small;
+    width:400px;
+    height: 200px;
+}
+.resaltado{
+    font-size: xx-large;
+}

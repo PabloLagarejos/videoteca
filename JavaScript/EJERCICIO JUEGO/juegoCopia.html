@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Inicio Musica
+        </title>
+        <meta caharset="UTF-8">
+        <link rel="styleSheet" href="css/juegoCopia.css">
+        <script type="text/javascript" src="JS/juego.js"></script>
+    </head> 
+    <body>
+        <section id="contenedor">
+            <header>     
+                <img src="img/logo.jpg" />      
+            </header>
+            <main>
+                <div id="divTabla">
+                    <table id="tablaJuego">
+                        <tr>
+                            <th><h2>Usuario</h2></th>
+                            <th><h2>Puntuacion</h2></th>
+                        </tr>
+                        <tr>
+                            <td id=nombreUsuario></th>
+                            <td id=puntuacionUsuario></th>
+                        </tr>
+                    </table>
+                </div>    
+                </div>
+                <div id="principal">
+                    <label for="casillas"><b><h3>Numero de casillas</h3></b></label> 
+                    <input type="number" name="casillas" id="casillas" value=""><br><br>
+                    <input type="submit" name="hacerCasillas" id="hacerCasillas" value="Hacer camino "onClick="crearCamino()"><br><br>
+                    <br><br>
+                    <div id="tablero"></div>
+                </div>
+            </main>
+            <aside>
+                <div id="dado">
+                    <img src="img/cuadrosImpares.jpg" id="imagenDado"><br><br>
+                    <input type="submit" name="tirarDado" id="tirarDado" value="Tirar dado" onClick="tirarDado()">
+                </div>
+            </aside>
+            <footer>
+                <p>Aqui footer</p>
+            </footer>
+        </section>
+    </body>
+</html>
